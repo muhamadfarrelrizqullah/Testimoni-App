@@ -1,0 +1,149 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #2b2d42, #8d99ae, #edf2f4, skyblue, deepskyblue);
+    background-size: 300% 500%;
+    animation: color 12s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea,
+.quill-editor {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+.quill-editor:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+.testimony-item:last-child {
+    border-bottom: none;
+}
+
+/* Quill editor styles */
+.ql-toolbar.ql-snow {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 150px;
+    margin-bottom: 16px;
+}
+
+.ql-editor {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.testimony-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    position: relative;
+}
+
+.testimony-header {
+    position: relative;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+@keyframes color{
+    0%{
+       background-position: 0 50%;
+    }
+    50%{
+       background-position: 100% 50%;
+    }
+    100%{
+       background-position: 0 50%;
+    }
+ }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Quill styles -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <title>Testimoni Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Testimoni Page - Pt. Hehehe</h1>
+        <form id="testimonyForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required minlength="3" maxlength="100" pattern="[A-Za-z\s'-]+" title="Hanya huruf, spasi, tanda petik, dan dash yang diperbolehkan">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required minlength="3" maxlength="100">
+            <label for="asal_instansi">Asal Instansi:</label>
+            <input type="text" id="asal_instansi" required minlength="3" maxlength="100" pattern="[A-Za-z\s'-]+" title="Hanya huruf, spasi, tanda petik, dan dash yang diperbolehkan">
+            <label for="testimoni">Testimoni:</label>
+            <!-- Use Quill editor -->
+            <div id="testimoni" class="quill-editor" required minlength="3"></div>
+            <label for="foto">Foto (URL):</label>
+            <input type="url" id="foto" required>
+            <button type="submit">Tambah Testimoni</button>
+        </form>
+        <div id="testimonyList"></div>
+    </div>
+    <!-- Include Quill script -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
